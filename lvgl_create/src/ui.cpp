@@ -15,9 +15,10 @@ void DispText(){
   lv_obj_align(settings, LV_ALIGN_CENTER, 0, 0);
 
   lv_obj_t *settinglabel = lv_label_create(settings);
-  lv_label_set_text(settinglabel, "Settings " LV_SYMBOL_SETTINGS);
+  lv_label_set_text(settinglabel, LV_SYMBOL_SETTINGS "Settings " );
   lv_obj_set_style_text_font(settinglabel, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
   lv_obj_align(settinglabel, LV_ALIGN_TOP_LEFT, 6, 0);
+
 
   lv_obj_t *lb_text = lv_label_create(settings);
   lv_obj_set_align(lb_text, LV_ALIGN_CENTER);
