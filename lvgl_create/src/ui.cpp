@@ -21,7 +21,7 @@ void DispText(){
 
   lv_obj_t *lb_text = lv_label_create(settings);
   lv_obj_set_align(lb_text, LV_ALIGN_CENTER);
-  lv_label_set_text(lb_text, "Welcome to Embedded AIoT Lab");
+  lv_label_set_text(lb_text, "Xin chao ban !!!");
   lv_obj_set_style_text_color(lb_text, lv_color_hex(0xFFFF00), LV_PART_MAIN | LV_STATE_DEFAULT);
   lv_obj_set_style_text_align(lb_text, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
   lv_obj_set_style_text_font(lb_text, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);

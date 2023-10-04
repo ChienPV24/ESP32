@@ -4,6 +4,9 @@
 #include <lvgl.h>
 #include <TFT_eSPI.h>
 
+extern TFT_eSPI tft; // Khai báo biến tft
+
+
 void tft_init();
 
 void my_touchpad_read( lv_indev_drv_t * indev_driver, lv_indev_data_t * data );

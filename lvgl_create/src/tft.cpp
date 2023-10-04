@@ -34,16 +34,16 @@ void my_touchpad_read( lv_indev_drv_t * indev_driver, lv_indev_data_t * data )
         data->point.x = touchX;
         data->point.y = touchY;
 
-        // Serial.print( "Data x " );
-        // Serial.println( touchX );
+        Serial.print( "Data x " );
+        Serial.println( touchX );
 
-        // Serial.print( "Data y " );
-        // Serial.println( touchY );
+        Serial.print( "Data y " );
+        Serial.println( touchY );
     }
 }
 
 void tft_init(){
-    uint16_t calData[5] = { 351, 3311, 398, 3446, 4};
+    uint16_t calData[5] = { 433, 3215, 528, 3317, 2};
     tft.begin();          /* TFT init */
     tft.setRotation( 3 ); /* Landscape orientation, flipped */
     tft.setTouch(calData);
