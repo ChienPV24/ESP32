@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include "FS.h"
 #include <SPI.h>
-// #include <lvgl.h>
-// #include <TFT_eSPI.h>
+#include <lvgl.h>
+#include <TFT_eSPI.h>
 #include <tft.h>
 #include <ui.h>
 #include <stdio.h>
@@ -15,7 +15,6 @@ static const uint16_t screenHeight = 240;
 
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[ screenWidth * 10 ];
-
 
 void setup(){
   Serial.begin(9600);
