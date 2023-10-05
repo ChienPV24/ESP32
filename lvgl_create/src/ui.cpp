@@ -26,4 +26,11 @@ void DispText(){
   lv_obj_set_style_text_color(lb_text, lv_color_hex(0xFFFF00), LV_PART_MAIN | LV_STATE_DEFAULT);
   lv_obj_set_style_text_align(lb_text, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
   lv_obj_set_style_text_font(lb_text, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+  lv_obj_t *lb_text1 = lv_label_create(settings);
+  lv_obj_set_align(lb_text1, LV_ALIGN_TOP_RIGHT);
+  lv_label_set_text(lb_text1, LV_SYMBOL_BLUETOOTH "Bluetooth");
+  lv_obj_set_style_text_color(lb_text1, lv_color_hex(0xFFFF00), LV_PART_MAIN | LV_STATE_DEFAULT);
+  lv_obj_set_style_text_align(lb_text1, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
+  lv_obj_set_style_text_font(lb_text1, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
 }

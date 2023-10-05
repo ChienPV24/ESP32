@@ -43,7 +43,7 @@ void my_touchpad_read( lv_indev_drv_t * indev_driver, lv_indev_data_t * data )
 }
 
 void tft_init(){
-    uint16_t calData[5] = { 433, 3215, 528, 3317, 2};
+    uint16_t calData[5] = {433, 3215, 528, 3317, 2};
     tft.begin();          /* TFT init */
     tft.setRotation( 3 ); /* Landscape orientation, flipped */
     tft.setTouch(calData);

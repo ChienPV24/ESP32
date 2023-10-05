@@ -1,3 +1,4 @@
+#include <WiFi.h>
 #include "FS.h"
 #include <SPI.h>
 // #include <lvgl.h>
@@ -17,7 +18,7 @@ static lv_color_t buf[ screenWidth * 10 ];
 
 
 void setup(){
-
+  Serial.begin(9600);
   lv_init();
   tft_init();
 
